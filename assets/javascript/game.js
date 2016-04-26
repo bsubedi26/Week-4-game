@@ -22,15 +22,18 @@ var wins = 0;
 var losses = 0;
 $(totalscore).html("Your total score is: " + total)
 $(winsLosses).html("Wins: " + wins + "<br>" + "Losses: " + losses)
-
-
+function start() {
 $("#crystal1").on("click", function(){
 	 total += random1;
 	 console.log(total);
 	 $(totalscore).html("Your total score is: " + total)
 	 	if (total == randomGeneratedNumber) {
 			wins++;
-			location.reload();
+			$(winsLosses).html("Wins: " + wins + "<br>" + "Losses: " + losses)
+			$(randomNumber).html(game.numGenerate(19,121));
+			total = 0;
+			$(totalscore).html("Your total score is: " + total)
+			start();
 			}
 })
 $("#crystal2").on("click", function(){
@@ -39,7 +42,11 @@ $("#crystal2").on("click", function(){
 	 $(totalscore).html("Your total score is: " + total)
 	 if (total == randomGeneratedNumber) {
 			wins++;
-			location.reload();
+			$(winsLosses).html("Wins: " + wins + "<br>" + "Losses: " + losses)
+			$(randomNumber).html(game.numGenerate(19,121));
+			total = 0;
+			$(totalscore).html("Your total score is: " + total)
+			start();
 		}
 })
 $("#crystal3").on("click", function(){
@@ -48,7 +55,11 @@ $("#crystal3").on("click", function(){
 	 $(totalscore).html("Your total score is: " + total)
 	 if (total == randomGeneratedNumber) {
 			wins++;
-			location.reload();
+			$(winsLosses).html("Wins: " + wins + "<br>" + "Losses: " + losses)
+			$(randomNumber).html(game.numGenerate(19,121));
+			total = 0;
+			$(totalscore).html("Your total score is: " + total)
+			start();
 		}
 })
 $("#crystal4").on("click", function(){
@@ -57,9 +68,15 @@ $("#crystal4").on("click", function(){
 	 $(totalscore).html("Your total score is: " + total)
 	 if (total == randomGeneratedNumber) {
 			wins++;
-			location.reload();
+			$(winsLosses).html("Wins: " + wins + "<br>" + "Losses: " + losses)
+			$(randomNumber).html(game.numGenerate(19,121));
+			total = 0;
+			$(totalscore).html("Your total score is: " + total)
+			start();
 		}
 })
+}
+start();
 
 
 	
