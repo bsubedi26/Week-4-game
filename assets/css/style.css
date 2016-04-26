@@ -12,8 +12,17 @@ background-image: url("http://www.transparenttextures.com/patterns/45-degree-fab
 
 .numberbox {
 	background-color: #6b6b47;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .images {
 	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#totalscore {
+	background-color: #6b6b47;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
 }
