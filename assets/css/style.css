@@ -1,0 +1,27 @@
+body {
+	/*background: url(../images/background.jpg);
+	background-size: 100%;*/
+	
+	font-size: 18px;
+	font-weight:;
+	color: black;
+	background-color: #999966;
+background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.container {
+	margin: 20px;
+	display: inline;
+
+}
+
+/*img {
+	border: 15px white solid;
+    float: left;
+ 	margin: 5px;
+    text-align: center;
+
+}
+*/
+
